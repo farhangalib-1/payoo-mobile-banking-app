@@ -7,7 +7,11 @@ document.getElementById('cashoutbtn').addEventListener('click', function(){
         if(accountNumber.value.length === 11 && pin.value === '1234'){
         const newBalance = parseInt(balance.innerText) - parseInt(amount.value)
         balance.textContent = newBalance
-        alert(`৳${amount.value} is widthdraw successfully ${new Date().toDateString()}`)
+        alert(`৳${amount.value} is widthdraw successfully ${new Date().toLocaleString()}`)
+        accountNumber.value = ''
+            amount.value = ''
+            pin.value = ''
+            return
         }
         else{
             alert('Mobile Number or Pin number is invalid')
