@@ -4,7 +4,7 @@ document.getElementById('addmoneybtn').addEventListener('click', function(){
     const amount = document.getElementById('amount')
     const pin = document.getElementById('pin')
     const balance = document.getElementById('balance')
-   
+    
     if (bankName.value === 'Select A Bank') {
         alert('Please select your bank name')
         bankName.value = 'Select A Bank'
@@ -16,6 +16,15 @@ document.getElementById('addmoneybtn').addEventListener('click', function(){
     }
     if (amount.value === '') {
         alert('Please enter amount to add')
+        bankName.value = 'Select A Bank'
+        bankAcountNumber.value= ''
+        amount.value = ''
+        pin.value = ''
+        balance.value = ''
+        return 
+    }
+    if(bankAcountNumber.value.startsWith('01') === false){
+        alert('Incorrect agent number')
         bankName.value = 'Select A Bank'
         bankAcountNumber.value= ''
         amount.value = ''
