@@ -8,6 +8,15 @@ document.getElementById('cashoutbtn').addEventListener('click', function(){
         const newBalance = parseInt(balance.innerText) - parseInt(amount.value)
         balance.textContent = newBalance
         alert(`৳${amount.value} is widthdraw successfully ${new Date().toLocaleString()}`)
+            const newTrans = document.createElement('div')
+    newTrans.innerHTML = `
+    <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">Cash Out Successfully</h1>
+            <p class="text-[12px] ml-4 mt-1"> ${new Date().toLocaleString()}</p>
+        </div>
+    `
+    const trans = document.getElementById('transId')
+    trans.appendChild(newTrans)
         accountNumber.value = ''
             amount.value = ''
             pin.value = ''

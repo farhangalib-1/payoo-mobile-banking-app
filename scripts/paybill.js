@@ -37,6 +37,16 @@ document.getElementById('paybillbtn').addEventListener('click', function(){
         const newBalance =  Number(balance.innerText) -Number(payBillamount.value)
         balance.textContent = newBalance
         alert(`${payBillamount.value} taka is paid succesfully for ${payBillName.value} at ${new Date().toLocaleString()}`)
+       const newTrans = document.createElement('div')
+    newTrans.innerHTML = `
+    <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">${payBillName.value} Paid</h1>
+            <p class="text-[12px] ml-4 mt-1"> ${new Date().toLocaleString()}</p>
+        </div>
+    `
+    const trans = document.getElementById('transId')
+    trans.appendChild(newTrans)
+       
         payBillName.value = 'Select biller'
         payBillAcountNumber.value= ''
         payBillamount.value = ''
@@ -65,8 +75,6 @@ document.getElementById('paybillbtn').addEventListener('click', function(){
     }
 
     
-    
-
     
     
 

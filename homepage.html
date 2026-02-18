@@ -42,7 +42,7 @@
     <h1 class="font-bold text-[24px] mb-4">Welcome to Pay<span class="text-primary">oo</span></h1>
    <p class="text-[16]/[26] font-normal text-neutral-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
    </div>
-    <div class="buttons mt-6 w-11/12 mx-auto grid grid-cols-3 gap-4 pb-6">
+    <div class="buttons mt-6 w-11/12 mx-auto grid grid-cols-3 gap-3 pb-6">
         <button id="btn-1" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-1.png" alt="">Add money</button>
         <button id="btn-2" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-2.png" alt="">Cashout</button>
         <button id="btn-3" class="btn btn-soft btn-primary flex-col w-full h-full py-5 text-[14px] font-normal"><img src="images/opt-3.png" alt="">Transfer Money</button>
@@ -125,7 +125,7 @@
     </div>
     </section>
 
-    <section id="paybill" class="paybills w-11/12 mx-auto mt-[15px] pb-[119px]">
+    <section id="paybill" class="paybills w-11/12 mx-auto mt-[15px] pb-[119px] hidden">
         <h3 class="font-bold">Pay Bill</h3>
         <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-[24px]">
       <div class="card-body">
@@ -151,6 +151,28 @@
     </div>
     </section>
 
+    <section id="transId" class="w-11/12 mx-auto mt-[15px] pb-3 overflow-y-auto h-[200px] ">
+        <div class="textcontent flex justify-between sticky top-0 z-10  bg-gray-50 py-2">
+            <h1 class="font-semibold">Transaction History</h1>
+            <p class="font-normal text-gray-400">View All</p>
+        </div>
+        <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">Electricity Bill Paid</h1>
+            <p class="text-[12px] ml-4 mt-1">2/19/2026, 2:09:32 AM</p>
+        </div>
+        <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">WiFi Bill Paid</h1>
+            <p class="text-[12px] ml-4 mt-1">2/19/2026, 1:09:32 pM</p>
+        </div>
+        <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">Money Added</h1>
+            <p class="text-[12px] ml-4 mt-1">2/15/2026, 12:29:12 PM</p>
+        </div>
+        <div class="allTrans w-full h-[81px] bg-white mt-4 rounded-2xl shadow">
+            <h1 class="font-bold text-[25px] ml-4 pt-2">Transfer Money</h1>
+            <p class="text-[12px] ml-4 mt-1">2/18/2026, 10:19:2 AM</p>
+        </div>
+    </section>
 </body>
 <script src="scripts/addmoney.js"></script>
 <script src="scripts/cashout.js"></script>
@@ -158,4 +180,5 @@
 <script src="scripts/transfermoney.js"></script>
 <script src="scripts/getbonus.js"></script>
 <script src="scripts/paybill.js"></script>
+<script src="scripts/trans.js"></script>
 </html>
