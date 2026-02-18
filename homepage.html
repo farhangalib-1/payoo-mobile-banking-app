@@ -28,7 +28,7 @@
         <div class="leftcontents mt-5 ml-4 mb-[23px] flex gap-2">
             <img class="w-[60px] h-[48px]" src="images/logo.png" alt="">
             <div class="textcontent">
-                <h3 class="font-bold">$<span>45000</span></h3>
+                <h3 class="font-bold">৳ <span id="balance">45000</span></h3>
                 <p class="text-neutral-500">Available Balance</p>
             </div>
         </div>
@@ -58,29 +58,27 @@
       <div class="card-body">
         <fieldset class="fieldset">
             <label class="label font-medium text-[#080808] text[16px]">Select A Bank</label>
-            <select class="select w-full rounded-full">
-            <option disabled selected>Select A Bank</option>
+            <select id="bankname" class="select w-full rounded-full">
+            <option id="defaultoption" disabled selected>Select A Bank</option>
             <option><img class="w-10 h-10" src="images/dutch_bangla.png" alt=""> Dutch-Bangla Bank</option>
             <option><img class="w-10 h-10" src="images/trust_Bank.png" alt="">Trust Bank</option>
             <option><img class="w-10 h-10" src="images/pubali_bank.png" alt="">Pubali Bank</option>
-            <option> <img class="w-9 h-9" src="images/one_bank.png" alt="">One Bank</option>
+            <option><img class="w-9 h-9" src="images/one_bank.png" alt="">One Bank</option>
             <option><img class="w-10 h-10" src="images/prime_bank.png" alt="">Prime Bank</option>
             <option><img class="w-10 h-10" src="images/islamic _bank.png" alt="">Islami Bank Bangladesh</option>
 </select>
           <label class="label font-medium text-[#080808] text[16px] mt-5">Bank Account Number</label>
-          <input id="mobilenumber" type="text" class="input rounded-full w-full" placeholder="Enter 11 digit account number" maxlength="11" minlength="11" />
+          <input id="acountnumber" type="text" class="input rounded-full w-full" placeholder="Enter 11 digit account number" maxlength="11" minlength="11" />
           <label class="label font-medium text-[#080808] text[16px] mt-5">Amount to Add</label>
-          <input id="mobilenumber" type="text" class="input rounded-full w-full" placeholder="Add Amount to withdraw"/>
+          <input id="amount" type="text" class="input rounded-full w-full" placeholder="Add Amount to add"/>
           <label class="label font-medium text-[#080808] text[16px] mt-5">4 Digit Pin</label>
           <input id="pin" type="password" class="input rounded-full w-full" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4" />
-          <button id="submitbtn" class="btn btn-primary mt-4 rounded-full">Login</button>
+          <button id="addmoneybtn" class="btn btn-primary mt-4 rounded-full">Login</button>
         </fieldset>
       </div>
     </div>
 
     </section>
-
-
 </body>
-
+<script src="scripts/addmoney.js"></script>
 </html>

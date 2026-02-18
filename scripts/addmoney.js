@@ -1,0 +1,55 @@
+document.getElementById('addmoneybtn').addEventListener('click', function(){
+    const bankName = document.getElementById('bankname')
+    const bankAcountNumber = document.getElementById('acountnumber')
+    const amount = document.getElementById('amount')
+    const pin = document.getElementById('pin')
+    const balance = document.getElementById('balance')
+   
+    if (bankName.value === 'Select A Bank') {
+        alert('Please select your bank name')
+        bankName.value = 'Select A Bank'
+        bankAcountNumber.value= ''
+        amount.value = ''
+        pin.value = ''
+        balance.value = ''
+        return 
+    }
+    if (amount.value === '') {
+        alert('Please enter amount to add')
+        bankName.value = 'Select A Bank'
+        bankAcountNumber.value= ''
+        amount.value = ''
+        pin.value = ''
+        balance.value = ''
+        return 
+    }
+
+
+    if(bankAcountNumber.value.length === 11 && pin.value === '1234'){
+        const newBalance = Number(amount.value) + Number(balance.innerText)
+        balance.textContent = newBalance
+        alert(`${amount.value} taka is added succesfully from ${bankName.value} at ${new Date().toLocaleString()}`)
+        bankName.value = 'Select A Bank'
+        bankAcountNumber.value= ''
+        amount.value = ''
+        pin.value = ''
+        balance.value = ''
+
+        
+    }
+    else if(bankAcountNumber.value.length !== 11){
+        alert("Agent Number isn't valid")
+    }
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+})
