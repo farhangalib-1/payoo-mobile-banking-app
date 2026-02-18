@@ -131,7 +131,7 @@
       <div class="card-body">
         <fieldset class="fieldset">
             <label class="label font-medium text-[#080808] text[16px]">Select biller</label>
-            <select id="bankname" class="select w-full rounded-full">
+            <select id="paybillname" class="select w-full rounded-full">
             <option id="defaultoption" disabled selected>Select biller</option>
             <option><img class="w-10 h-10" src="images/tuition.png" alt="">Tuition Fees</option>
             <option><img class="w-10 h-10" src="images/wi-fi.png" alt="">WiFi Bills</option>
@@ -140,12 +140,12 @@
             <option><img class="w-10 h-10" src="images/gas.png" alt="">Gas Bills</option>
             </select>
           <label class="label font-medium text-[#080808] text[16px] mt-5">Biller Account Number</label>
-          <input id="acountnumber" type="text" class="input rounded-full w-full" placeholder="Enter account number" maxlength="11" minlength="11" />
+          <input id="paybillacountnumber" type="text" class="input rounded-full w-full" placeholder="Enter account number" maxlength="11" minlength="11" />
           <label class="label font-medium text-[#080808] text[16px] mt-5">Amount to Pay</label>
-          <input id="amount" type="text" class="input rounded-full w-full" placeholder="Add Amount to pay"/>
+          <input id="paybillamount" type="text" class="input rounded-full w-full" placeholder="Add Amount to pay"/>
           <label class="label font-medium text-[#080808] text[16px] mt-5">Pin Number</label>
-          <input id="pin" type="password" class="input rounded-full w-full" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4" />
-          <button id="addmoneybtn" class="btn btn-primary mt-4 rounded-full text-[20px]">Pay Now</button>
+          <input id="paybillpin" type="password" class="input rounded-full w-full" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4" />
+          <button id="paybillbtn" class="btn btn-primary mt-4 rounded-full text-[20px]">Pay Now</button>
         </fieldset>
       </div>
     </div>
@@ -157,4 +157,5 @@
 <script src="scripts/connection.js"></script>
 <script src="scripts/transfermoney.js"></script>
 <script src="scripts/getbonus.js"></script>
+<script src="scripts/paybill.js"></script>
 </html>
