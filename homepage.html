@@ -43,15 +43,15 @@
    <p class="text-[16]/[26] font-normal text-neutral-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
    </div>
     <div class="buttons mt-6 w-11/12 mx-auto grid grid-cols-3 gap-4 pb-6">
-        <button class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-1.png" alt="">Add money</button>
-        <button class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-2.png" alt="">Cashout</button>
-        <button class="btn btn-soft btn-primary flex-col w-full h-full py-5 text-[14px] font-normal"><img src="images/opt-3.png" alt="">Transfer Money</button>
-        <button class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-4.png" alt="">Get Bonus</button>
-        <button class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-5.png" alt="">Pay Bill</button>
-        <button class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-6.png" alt="">Transactions</button>
+        <button id="btn-1" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-1.png" alt="">Add money</button>
+        <button id="btn-2" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-2.png" alt="">Cashout</button>
+        <button id="btn-3" class="btn btn-soft btn-primary flex-col w-full h-full py-5 text-[14px] font-normal"><img src="images/opt-3.png" alt="">Transfer Money</button>
+        <button id="btn-4" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-4.png" alt="">Get Bonus</button>
+        <button id="btn-5" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-5.png" alt="">Pay Bill</button>
+        <button id="btn-6" class="btn btn-soft btn-primary flex-col h-full py-5 text-[14px] font-normal"><img src="images/opt-6.png" alt="">Transactions</button>
     </section>
     
-    <section class="addmoney w-11/12 mx-auto mt-[15px] pb-[119px] hidden">
+    <section id="AddMoney" class="addmoney w-11/12 mx-auto mt-[15px] pb-[119px] hidden">
         <h3 class="font-bold">Add Money</h3>
         <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-[24px]">
       <div class="card-body">
@@ -78,7 +78,7 @@
     </div>
     </section>
 
-    <section class="cashout w-11/12 mx-auto mt-[15px] pb-[119px]">
+    <section id="ClassOut" class="cashout w-11/12 mx-auto mt-[15px] pb-[119px] hidden">
         <h3 class="font-bold">Cash Out</h3>
         <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-3xl">
       <div class="card-body">
@@ -98,4 +98,5 @@
 </body>
 <script src="scripts/addmoney.js"></script>
 <script src="scripts/cashout.js"></script>
+<script src="scripts/connection.js"></script>
 </html>
