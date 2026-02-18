@@ -24,7 +24,7 @@
     </style>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-   <section class="navbar flex justify-between border-b-1 border-b-slate-300 bg-white">
+   <section class="navbar flex justify-between border-b border-b-slate-300 bg-white">
         <div class="leftcontents mt-5 ml-4 mb-[23px] flex gap-2">
             <img class="w-[60px] h-[48px]" src="images/logo.png" alt="">
             <div class="textcontent">
@@ -95,8 +95,66 @@
     </div>
     </section>
 
+    <section id="TransferMoney" class="transfer w-11/12 mx-auto mt-[15px] pb-[119px] hidden">
+        <h3 class="font-bold">Transfer Money</h3>
+        <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-3xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-medium text-[#080808] text[16px] mt-5">User Account Number</label>
+          <input id="transferacountnumber" type="text" class="input rounded-full w-full" placeholder="Enter 11 digit account number" maxlength="11" minlength="11" />
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Amount</label>
+          <input id="transferamount" type="text" class="input rounded-full w-full" placeholder="Enter amount to withdraw"/>
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Pin Number</label>
+          <input id="transferpin" type="password" class="input rounded-full w-full" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4" />
+          <button id="transferbtn" class="btn btn-primary mt-4 rounded-full text-[20px]">Send Now</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
+    <section id="getbonous" class="transfer w-11/12 mx-auto mt-[15px] pb-[119px] hidden ">
+        <h3 class="font-bold">Get Bonus</h3>
+        <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-3xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Enter Bonus Coupon</label>
+          <input id="couponcode" type="text" class="input rounded-full w-full" placeholder="Enter your coupon"/>
+          <button id="bonusbtn" class="btn btn-primary mt-4 rounded-full text-[20px]">Get Bonus</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
+    <section id="paybill" class="paybills w-11/12 mx-auto mt-[15px] pb-[119px]">
+        <h3 class="font-bold">Pay Bill</h3>
+        <div class="card bg-base-100 w-full  shrink-0 shadow mt-4 mx-auto rounded-[24px]">
+      <div class="card-body">
+        <fieldset class="fieldset">
+            <label class="label font-medium text-[#080808] text[16px]">Select biller</label>
+            <select id="bankname" class="select w-full rounded-full">
+            <option id="defaultoption" disabled selected>Select biller</option>
+            <option><img class="w-10 h-10" src="images/tuition.png" alt="">Tuition Fees</option>
+            <option><img class="w-10 h-10" src="images/wi-fi.png" alt="">WiFi Bills</option>
+            <option><img class="w-10 h-10" src="images/electricity.png" alt="">Electricity Bills</option>
+            <option><img class="w-9 h-9" src="images/water.png" alt="">Water Bills</option>
+            <option><img class="w-10 h-10" src="images/gas.png" alt="">Gas Bills</option>
+            </select>
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Biller Account Number</label>
+          <input id="acountnumber" type="text" class="input rounded-full w-full" placeholder="Enter account number" maxlength="11" minlength="11" />
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Amount to Pay</label>
+          <input id="amount" type="text" class="input rounded-full w-full" placeholder="Add Amount to pay"/>
+          <label class="label font-medium text-[#080808] text[16px] mt-5">Pin Number</label>
+          <input id="pin" type="password" class="input rounded-full w-full" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4" />
+          <button id="addmoneybtn" class="btn btn-primary mt-4 rounded-full text-[20px]">Pay Now</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
 </body>
 <script src="scripts/addmoney.js"></script>
 <script src="scripts/cashout.js"></script>
 <script src="scripts/connection.js"></script>
+<script src="scripts/transfermoney.js"></script>
+<script src="scripts/getbonus.js"></script>
 </html>

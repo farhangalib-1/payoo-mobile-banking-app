@@ -1,13 +1,43 @@
 document.getElementById('btn-1').addEventListener('click', function(){
     const addMoney = document.getElementById('AddMoney')
     const cashOut = document.getElementById('ClassOut')
+    const transferMoney = document.getElementById('TransferMoney')
+    const getBonus = document.getElementById('getbonous')
     addMoney.classList.remove('hidden')
     cashOut.classList.add('hidden')
+    transferMoney.classList.add('hidden')
+    getBonus.classList.add('hidden')
 })
 
 document.getElementById('btn-2').addEventListener('click', function(){
     const addMoney = document.getElementById('AddMoney')
     const cashOut = document.getElementById('ClassOut')
+    const transferMoney = document.getElementById('TransferMoney')
+    const getBonus = document.getElementById('getbonous')
     addMoney.classList.add('hidden')
     cashOut.classList.remove('hidden')
+    transferMoney.classList.add('hidden')
+    getBonus.classList.add('hidden')
+})
+
+document.getElementById('btn-3').addEventListener('click', function(){
+    const addMoney = document.getElementById('AddMoney')
+    const cashOut = document.getElementById('ClassOut')
+    const transferMoney = document.getElementById('TransferMoney')
+    const getBonus = document.getElementById('getbonous')
+    addMoney.classList.add('hidden')
+    cashOut.classList.add('hidden')
+    transferMoney.classList.remove('hidden')
+    getBonus.classList.add('hidden')
+})
+
+document.getElementById('btn-4').addEventListener('click', function(){
+    const addMoney = document.getElementById('AddMoney')
+    const cashOut = document.getElementById('ClassOut')
+    const transferMoney = document.getElementById('TransferMoney')
+    const getBonus = document.getElementById('getbonous')
+    addMoney.classList.add('hidden')
+    cashOut.classList.add('hidden')
+    transferMoney.classList.add('hidden')
+    getBonus.classList.remove('hidden')
 })
