@@ -48,6 +48,12 @@ document.getElementById('addmoneybtn').addEventListener('click', function(){
     }
     else if(bankAcountNumber.value.length !== 11){
         alert("Agent Number isn't valid")
+        bankName.value = 'Select A Bank'
+        bankAcountNumber.value= ''
+        amount.value = ''
+        pin.value = ''
+        balance.value = ''
+        return 
     }
 
     
