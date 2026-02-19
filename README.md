@@ -19,6 +19,6 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
 
 ## UI 
 <img width="300" height="600" alt="Screenshot 2026-02-19 044608" src="https://github.com/user-attachments/assets/530ee39f-b2e1-4201-9a21-c49af8abb100" />
-<img width="300" height="600" alt="Screenshot 2026-02-19 044631" src="https://github.com/user-attachments/assets/fb9a5c23-6de1-4f06-906f-14d0043e983d" />
+     <img width="300" height="600" alt="Screenshot 2026-02-19 044631" src="https://github.com/user-attachments/assets/fb9a5c23-6de1-4f06-906f-14d0043e983d" />
 
 
